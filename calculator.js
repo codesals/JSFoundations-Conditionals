@@ -2,30 +2,24 @@
 let firstNumber = 10;
 let secondNumber = 5;
 
-let operation = "*";
+let operation = "/";
 
 // Write if-statements here
 
-if (operation === "+") {
+if (operation === "+")
   console.log(
     `${firstNumber}${operation}${secondNumber} = ${firstNumber + secondNumber}`
   );
-}
-
-if (operation === "-") {
+else if (operation === "-")
   console.log(
     `${firstNumber}${operation}${secondNumber} = ${firstNumber - secondNumber}`
   );
-}
-
-if (operation === "*") {
+else if (operation === "*")
   console.log(
     `${firstNumber}${operation}${secondNumber} = ${firstNumber * secondNumber}`
   );
-}
-
-if (operation === "/") {
+else if (operation === "/")
   console.log(
     `${firstNumber}${operation}${secondNumber} = ${firstNumber / secondNumber}`
   );
-}
+else console.log(`unrecognized operation!`);
