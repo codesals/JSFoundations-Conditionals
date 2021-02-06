@@ -6,20 +6,12 @@ let operation = "/";
 
 // Write if-statements here
 
-if (operation === "+")
-  console.log(
-    `${firstNumber}${operation}${secondNumber} = ${firstNumber + secondNumber}`
-  );
-else if (operation === "-")
-  console.log(
-    `${firstNumber}${operation}${secondNumber} = ${firstNumber - secondNumber}`
-  );
-else if (operation === "*")
-  console.log(
-    `${firstNumber}${operation}${secondNumber} = ${firstNumber * secondNumber}`
-  );
-else if (operation === "/")
-  console.log(
-    `${firstNumber}${operation}${secondNumber} = ${firstNumber / secondNumber}`
-  );
-else console.log(`unrecognized operation!`);
+let result;
+
+if (operation === "+") result = firstNumber + secondNumber;
+if (operation === "-") result = firstNumber - secondNumber;
+if (operation === "*") result = firstNumber * secondNumber;
+if (operation === "/") result = firstNumber / secondNumber;
+
+if (result === undefined) console.log(`undefined operation!`);
+else console.log(`${firstNumber}${operation}${secondNumber} = ${result}`);
